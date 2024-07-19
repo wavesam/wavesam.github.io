@@ -1,5 +1,15 @@
+import Section from "./Section";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <Section
+      content={
+        <div className="w-4/5">
+          <h1>About</h1>
+        </div>
+      }
+    />
+  );
 };
 
 export default About;
