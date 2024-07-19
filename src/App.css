@@ -1,8 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Englebert&family=Indie+Flower&display=swap");
-
 body {
-  font-family: Arial;
   font-weight: 900;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
 }
 
 .engrave {
