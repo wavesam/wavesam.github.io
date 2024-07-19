@@ -13,7 +13,7 @@ const Home = () => {
           </div>
           <div className="-mt-20 text-3xl">Your average react developer :)</div>
           <div className="text-xl">
-            Proficient at{" "}
+            Proficient in{" "}
             <div className="text-black inline">
               react, html, css, vite and tailwind.
             </div>
