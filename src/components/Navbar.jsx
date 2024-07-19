@@ -1,8 +1,18 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   return (
     <div className="p-5 items-center bg-orange-100">
-      <div className="engrave">
-        <div className="text-4xl">Sambeige</div>
+      <div className="engrave flex gap-5">
+        <Link to="/">
+          <div className="pb-5 text-4xl">Home</div>
+        </Link>
+        <Link to="/about">
+          <div className="pb-5 text-4xl">About</div>
+        </Link>
+        <Link to="/projects">
+          <div className="pb-5 text-4xl">Projects</div>
+        </Link>
       </div>
     </div>
   );
