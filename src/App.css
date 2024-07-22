@@ -10,9 +10,9 @@ p {
 
 .engrave {
   color: transparent;
-  background: #575757;
+  background: #000000;
   background-clip: text;
-  text-shadow: -4px 8px 7px rgba(255, 255, 255, 0.3);
+  text-shadow: -4px 8px 7px #ffedd557;
 }
 
 .pop {
