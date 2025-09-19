@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Section
       content={
-        <div className="w-4/5">
+        <>
           <h1>About</h1>
           <p>
             <br />
@@ -69,7 +69,7 @@ const About = () => {
             be as capable as I can be socially, and also encourage my friends to
             approach life with the same mindset.
           </p>
-        </div>
+        </>
       }
     />
   );

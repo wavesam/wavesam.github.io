@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="p-5 items-center bg-orange-100 text-2xl sm:text-3xl">
-      <div className="engrave flex gap-5 justify-center">
-        <Link to="/">
-          <div className="pb-5">Home</div>
-        </Link>
+    <div className="px-[10%] py-5 justify-between flex text-3xl bg-black text-white">
+      <Link to="/">🌊 wavesam</Link>
+      {/*
+      <div className="flex gap-5">
         <Link to="/about">
-          <div className="pb-5">About</div>
+          <div>About</div>
         </Link>
       </div>
+      */}
     </div>
   );
 };
