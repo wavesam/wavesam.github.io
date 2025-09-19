@@ -9,7 +9,7 @@ const WebsiteFrame = ({ site }) => {
           <p></p>
         </div>
       </div>
-      <div className="w-full h-[700px] rounded-b-3xl border-8 border-gray-900 bg-gray-900 flex items-center justify-center">
+      <div className="w-full h-[700px] rounded-b-3xl border-4 border-gray-900 bg-gray-900 flex items-center justify-center">
         <iframe
           src={`https://${site}`}
           className="w-full h-full rounded-3xl bg-white"

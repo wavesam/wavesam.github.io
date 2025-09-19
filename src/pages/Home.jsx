@@ -11,7 +11,7 @@ const Home = () => {
               <img
                 src="https://github.com/wavesam.png"
                 alt="GitHub profile"
-                className="w-[150px] h-[150px] rounded-full border-2 border-black"
+                className="w-[150px] h-[150px] rounded-full border-4 border-black"
               />
               <p className="text-3xl/10">
                 Hi, I'm <strong>Lee Yan Ho Samuel</strong>! I am an aspiring
