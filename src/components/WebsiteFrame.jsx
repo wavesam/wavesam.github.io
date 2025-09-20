@@ -58,9 +58,7 @@ const WebsiteFrame = ({ site, title, description }) => {
                   </svg>
                 </motion.div>
                 <div>
-                  <div className="text-2xl lg:text-3xl text-white font-black">
-                    {title}
-                  </div>
+                  <div className="text-2xl text-white font-black">{title}</div>
                   <div className="text-white text-center lg:text-left">
                     Click to Play!
                   </div>
@@ -107,7 +105,7 @@ const WebsiteFrame = ({ site, title, description }) => {
                 </div>
 
                 <div className="hidden lg:flex flex-col w-3/4 h-full">
-                  <div className="relative flex items-center p-7 bg-gray-300">
+                  <div className="relative flex items-center p-4 bg-gray-300">
                     <div className="flex space-x-2">
                       <div className="w-3 h-3 bg-blue-900"></div>
                       <div className="w-3 h-3 bg-blue-700"></div>
@@ -115,7 +113,7 @@ const WebsiteFrame = ({ site, title, description }) => {
                     </div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <a
-                        className="text-3xl font-bold"
+                        className="text-2xl lg:3xl font-bold"
                         href={`https://${site}`}
                         target="_blank"
                         rel="noopener noreferrer"
