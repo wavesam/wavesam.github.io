@@ -15,7 +15,9 @@ const Home = () => {
                 <div className="w-3 h-3 bg-blue-500"></div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-3xl font-bold">Introduction</div>
+                <div className="text-2xl lg:text-3xl font-bold">
+                  Introduction
+                </div>
               </div>
             </div>
 
@@ -44,7 +46,9 @@ const Home = () => {
                 <div className="w-3 h-3 bg-blue-500"></div>
               </div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-3xl font-bold">Notable Projects</div>
+                <div className="text-2xl lg:text-3xl font-bold">
+                  Notable Projects
+                </div>
               </div>
             </div>
 

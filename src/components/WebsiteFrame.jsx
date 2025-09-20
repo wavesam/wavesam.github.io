@@ -58,7 +58,9 @@ const WebsiteFrame = ({ site, title, description }) => {
                   </svg>
                 </motion.div>
                 <div>
-                  <div className="text-3xl text-white font-black">{title}</div>
+                  <div className="text-2xl lg:text-3xl text-white font-black">
+                    {title}
+                  </div>
                   <div className="text-white">Click to Play!</div>
                 </div>
               </div>
