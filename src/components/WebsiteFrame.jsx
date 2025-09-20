@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Window from "./Window";
 
 const WebsiteFrame = ({ site, title, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,10 +42,10 @@ const WebsiteFrame = ({ site, title, description }) => {
             )}
 
             {/* Blur overlay and play button */}
-            <div className="absolute inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center">
               <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
                 <motion.div
-                  className="w-16 h-16 bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-color"
+                  className="w-16 h-16 bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-color border-4 border-black"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -57,11 +58,9 @@ const WebsiteFrame = ({ site, title, description }) => {
                     <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
                   </svg>
                 </motion.div>
-                <div>
-                  <div className="text-2xl text-white font-black">{title}</div>
-                  <div className="text-white text-center lg:text-left">
-                    Click to Play!
-                  </div>
+                <div className="text-white">
+                  <div className="text-2xl font-black">{title}</div>
+                  <div className="text-center lg:text-left">Click to Play!</div>
                 </div>
               </div>
             </div>
@@ -73,7 +72,7 @@ const WebsiteFrame = ({ site, title, description }) => {
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-blue-300"
             onClick={closeModal}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -90,11 +89,24 @@ const WebsiteFrame = ({ site, title, description }) => {
             >
               {/* Modal content */}
               <div className="h-full flex flex-col lg:flex-row gap-10 justify-between">
-                <div className="h-full justify-center lg:w-1/4 flex flex-col gap-10 items-start text-white">
+                <div className="h-full justify-center lg:w-1/4 flex flex-col gap-10 items-start">
                   <div className="text-5xl font-black">{title}</div>
-                  <div>{description}</div>
+                  <div className="text-xl">{description}</div>
+                  <div className="lg:hidden text-[14px] text-red-700">
+                    Embeded preview is not supported on mobile.<br></br>↓ Visit
+                    the site instead
+                  </div>
                   <motion.button
-                    className="text-3xl hover:text-gray-300 transition-colors"
+                    className="text-xl transition-colors bg-white hover:bg-gray-300 border-4 border-black px-4 py-2 font-black"
+                    onClick={() => window.open(`https://${site}`, "_blank")}
+                    aria-label="Close modal"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    Visit Site
+                  </motion.button>
+                  <motion.button
+                    className="text-xl hover:text-blue-700 transition-colors"
                     onClick={closeModal}
                     aria-label="Close modal"
                     whileHover={{ scale: 1.1 }}
@@ -103,34 +115,21 @@ const WebsiteFrame = ({ site, title, description }) => {
                     ← Back
                   </motion.button>
                 </div>
-
-                <div className="hidden lg:flex flex-col w-3/4 h-full">
-                  <div className="relative flex items-center p-4 bg-gray-300">
-                    <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-blue-900"></div>
-                      <div className="w-3 h-3 bg-blue-700"></div>
-                      <div className="w-3 h-3 bg-blue-500"></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <a
-                        className="text-2xl lg:3xl font-bold"
-                        href={`https://${site}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {site}
-                      </a>
-                    </div>
-                  </div>
-                  <div className="w-full h-full border-x-4 border-b-4 flex items-center justify-center">
-                    <iframe
-                      src={`https://${site}`}
-                      className="w-full h-full bg-white"
-                      title={site}
-                    >
-                      <p>Your browser does not support iframes.</p>
-                    </iframe>
-                  </div>
+                <div className="hidden lg:flex w-full">
+                  <Window
+                    title={site}
+                    content={
+                      <div className="w-full h-full flex items-center justify-center">
+                        <iframe
+                          src={`https://${site}`}
+                          className="w-full h-full bg-white"
+                          title={site}
+                        >
+                          <p>Your browser does not support iframes.</p>
+                        </iframe>
+                      </div>
+                    }
+                  ></Window>
                 </div>
               </div>
             </motion.div>
