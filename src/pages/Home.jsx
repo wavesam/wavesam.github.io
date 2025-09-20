@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <Section
       content={
-        <div className="my-20 w-full flex flex-col gap-2">
+        <div className="my-10 w-full flex flex-col gap-2">
           <div className="lg:w-2/3">
             <Window
               title="Introduction"
@@ -28,7 +28,7 @@ const Home = () => {
             ></Window>
           </div>
 
-          <div className="mt-20">
+          <div className="mt-10">
             <Window
               title="Projects"
               content={
