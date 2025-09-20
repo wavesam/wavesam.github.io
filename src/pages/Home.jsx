@@ -8,7 +8,7 @@ const Home = () => {
         <div className="my-20 w-full flex flex-col gap-2">
           <div className="md:w-2/3 bg-gray-100 border-4 border-black">
             {/* Traffic light buttons */}
-            <div className="relative flex items-center p-7 border-b-4 border-black bg-gray-300">
+            <div className="relative flex items-center p-6 md:p-7 border-b-4 border-black bg-gray-300">
               <div className="flex space-x-2">
                 <div className="w-3 h-3 bg-blue-900"></div>
                 <div className="w-3 h-3 bg-blue-700"></div>
@@ -39,8 +39,8 @@ const Home = () => {
 
           <div className="mt-20 w-full bg-gray-100 border-4 border-black">
             {/* Traffic light buttons */}
-            <div className="relative flex items-center p-7 border-b-4 border-black bg-gray-300">
-              <div className="flex space-x-2">
+            <div className="relative flex items-center p-6 md:p-7 border-b-4 border-black bg-gray-300">
+              <div className="hidden md:flex space-x-2">
                 <div className="w-3 h-3 bg-blue-900"></div>
                 <div className="w-3 h-3 bg-blue-700"></div>
                 <div className="w-3 h-3 bg-blue-500"></div>
