@@ -42,7 +42,7 @@ const WebsiteFrame = ({ site, title, description }) => {
             )}
 
             {/* Blur overlay and play button */}
-            <div className="absolute inset-0 bg-black/50 backdrop-blur-md flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/80 flex items-center justify-center">
               <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
                 <motion.div
                   className="w-16 h-16 bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-color border-4 border-black"
