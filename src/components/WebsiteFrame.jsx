@@ -20,7 +20,6 @@ const WebsiteFrame = ({ site, title, description }) => {
         transition={{ duration: 0.2 }}
       >
         <motion.div className="w-full h-[300px] flex items-center justify-center relative overflow-hidden border-4 border-black">
-          {/* Blurred iframe with overlay */}
           <div className="relative w-full h-full">
             <iframe
               src={`https://${site}`}
@@ -33,7 +32,6 @@ const WebsiteFrame = ({ site, title, description }) => {
               <p>Your browser does not support iframes.</p>
             </iframe>
 
-            {/* Loading state */}
             {isLoading && (
               <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
                 <div className="animate-pulse text-gray-500">
@@ -42,7 +40,6 @@ const WebsiteFrame = ({ site, title, description }) => {
               </div>
             )}
 
-            {/* Blur overlay and play button */}
             <div className="absolute inset-0 bg-black/80 flex items-center justify-center">
               <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
                 <motion.div

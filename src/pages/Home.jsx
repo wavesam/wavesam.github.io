@@ -9,7 +9,7 @@ const Home = () => {
       content={
         <div className="my-10 w-full flex flex-col">
           <div className="flex flex-col lg:flex-row gap-5">
-            <div className="lg:w-full animate-fadeInLeft">
+            <div className="lg:w-full">
               <Window
                 title="Introduction"
                 content={
@@ -30,7 +30,7 @@ const Home = () => {
               ></Window>
             </div>
 
-            <div className="animate-fadeInRight">
+            <div className="">
               <Window
                 title="Experience"
                 content={
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-5 animate-fadeInUp">
+          <div className="mt-5">
             <Window
               title="Projects"
               content={
