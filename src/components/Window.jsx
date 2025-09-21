@@ -1,6 +1,6 @@
 const Window = ({ title, content }) => {
   return (
-    <div className="w-full h-full bg-gray-100 border-4 border-black">
+    <div className="w-full h-full border-4 border-black">
       {/* Traffic light buttons */}
       <div className="relative flex items-center p-4 border-b-4 border-black bg-gray-300">
         <div className="flex space-x-2">
@@ -12,7 +12,9 @@ const Window = ({ title, content }) => {
           <div className="text-2xl font-bold">{title}</div>
         </div>
       </div>
-      <div className="h-[calc(100%-theme(space.8)-16px)]">{content}</div>
+      <div className="h-[calc(100%-theme(space.8)-16px)] bg-white">
+        {content}
+      </div>
     </div>
   );
 };

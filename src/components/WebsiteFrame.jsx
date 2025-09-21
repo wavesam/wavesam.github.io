@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Window from "./Window";
+import ExternalLink from "./ExternalLink";
 
 const WebsiteFrame = ({ site, title, description }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
