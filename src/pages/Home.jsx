@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <Section
       content={
-        <div className="my-10 w-full flex flex-col gap-2">
+        <div className="my-10 w-full flex flex-col">
           <div className="flex flex-col lg:flex-row gap-5">
-            <div className="lg:w-full">
+            <div className="lg:w-full animate-fadeInLeft">
               <Window
                 title="Introduction"
                 content={
@@ -30,7 +30,7 @@ const Home = () => {
               ></Window>
             </div>
 
-            <div>
+            <div className="animate-fadeInRight">
               <Window
                 title="Experience"
                 content={
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-5">
+          <div className="mt-5 animate-fadeInUp">
             <Window
               title="Projects"
               content={
