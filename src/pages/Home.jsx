@@ -46,14 +46,6 @@ const Home = () => {
                         </ExternalLink>
                       </strong>
                     </div>
-                    <div>
-                      Other stuff{" "}
-                      <strong>
-                        <ExternalLink size="md" href="">
-                          I'll add
-                        </ExternalLink>
-                      </strong>
-                    </div>
                   </div>
                 }
               ></Window>
