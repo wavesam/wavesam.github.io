@@ -43,12 +43,12 @@ const Modal = ({ isOpen, onClose, site, title, description }) => {
               }}
             >
               {/* Modal content */}
-              <div className="h-full flex flex-col lg:flex-row gap-10 justify-between">
-                <div className="h-full justify-center lg:w-1/4 flex flex-col gap-10 items-start">
+              <div className="h-full flex flex-col lg:flex-row gap-[50px] justify-between">
+                <div className="h-full justify-center lg:w-1/4 flex flex-col gap-7 lg:gap-10 items-start">
                   <div className="text-5xl font-black">{title}</div>
                   <div className="text-xl">{description}</div>
-                  <div className="lg:hidden text-[14px] text-red-700">
-                    Embeded preview is not supported on mobile.
+                  <div className="lg:hidden text-[14px] text-blue-700">
+                    Preview is only supported on desktop.
                     <br />↓ Visit the site instead
                   </div>
                   <motion.button
