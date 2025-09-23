@@ -46,9 +46,6 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
               <div className="h-full flex flex-col lg:flex-row gap-[50px] justify-between">
                 <div className="h-full justify-center lg:w-1/4 flex flex-col gap-7 lg:gap-10 items-start">
                   <div className="text-5xl font-black">{title}</div>
-                  <div className="text-xl">{description}</div>
-
-                  {/* Tags in modal */}
                   <div className="flex flex-wrap gap-2">
                     {tags &&
                       tags.map((tag, index) => (
@@ -60,6 +57,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
                         </span>
                       ))}
                   </div>
+                  <div className="text-xl">{description}</div>
 
                   <div className="lg:hidden text-[14px] text-blue-700">
                     Preview is only supported on desktop.
