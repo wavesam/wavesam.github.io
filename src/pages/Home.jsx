@@ -68,7 +68,7 @@ const Home = () => {
                   <div className="justify-between flex flex-col lg:flex-row gap-5">
                     <WebsiteFrame
                       site="wavesam.io/kahatacademy"
-                      title="Rickroll Link Generator"
+                      title="Rickroll Generator"
                       description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
                     />
                     <WebsiteFrame
