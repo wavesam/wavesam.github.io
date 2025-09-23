@@ -77,7 +77,7 @@ const Modal = ({ isOpen, onClose, site, title, description }) => {
                       <div className="w-full h-full flex items-center justify-center">
                         <iframe
                           src={`https://${site}`}
-                          className="w-full h-full bg-black"
+                          className="w-full h-full"
                           title={site}
                         >
                           <p>Your browser does not support iframes.</p>
