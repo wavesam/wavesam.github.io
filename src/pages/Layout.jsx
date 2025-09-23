@@ -4,9 +4,14 @@ import Footer from "../components/Footer";
 
 const Layout = () => {
   return (
-    <div className="w-full min-h-screen bg-[url('https://i.redd.it/upkutkfhobde1.png')] bg-cover bg-fixed">
-      <Navbar />
-      <Outlet />
+    <div className="w-full bg-[url('https://i.redd.it/upkutkfhobde1.png')] bg-cover bg-fixed">
+      <div className="animate-fadeInDown">
+        <Navbar />
+      </div>
+
+      <div className="min-h-screen">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
