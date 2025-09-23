@@ -64,18 +64,27 @@ const Home = () => {
             <Window
               title="Projects"
               content={
-                <div className="p-5 justify-between flex flex-col lg:flex-row gap-5">
-                  <WebsiteFrame
-                    site="kwantum-institute.github.io"
-                    title="Kwantum Institute"
-                    description="I was the lead web developer at Kwantum Institute, responsible for
+                <div className="w-full h-full p-5 flex flex-col gap-5">
+                  <div className="justify-between flex flex-col lg:flex-row gap-5">
+                    <WebsiteFrame
+                      site="kwantum-institute.github.io"
+                      title="Kwantum Institute"
+                      description="I was the lead web developer at Kwantum Institute, responsible for
       the majority of the front-end development."
-                  />
-                  <WebsiteFrame
-                    site="wavesam.github.io"
-                    title="Portfolio Website"
-                    description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
-                  />
+                    />
+                    <WebsiteFrame
+                      site="wavesam.github.io"
+                      title="Portfolio Website"
+                      description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
+                    />
+                  </div>
+                  <div className="justify-between flex flex-col lg:flex-row gap-5">
+                    <WebsiteFrame
+                      site="wavesam.github.io/kahatacademy"
+                      title="Rickrolling Site"
+                      description="A simple website I created that can rickroll people! Users can create custom rickroll links. Built with vanilla JS and Tailwind CSS."
+                    />
+                  </div>
                 </div>
               }
             ></Window>
