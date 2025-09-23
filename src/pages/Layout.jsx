@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 const Layout = () => {
   return (
     <div className="w-full bg-[url('https://i.redd.it/upkutkfhobde1.png')] bg-cover bg-fixed">
-      <div className="animate-fadeInDown">
+      <div className="">
         <Navbar />
       </div>
 
