@@ -67,7 +67,7 @@ const Home = () => {
                 <div className="w-full h-full p-5 flex flex-col gap-5">
                   <div className="justify-between flex flex-col lg:flex-row gap-5">
                     <WebsiteFrame
-                      site="wavesam.github.io/kahatacademy"
+                      site="wavesam.io/kahatacademy"
                       title="Rickroll Link Generator"
                       description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
                     />
@@ -80,7 +80,7 @@ const Home = () => {
                   </div>
                   <div className="justify-between flex flex-col lg:flex-row gap-5">
                     <WebsiteFrame
-                      site="wavesam.github.io"
+                      site="wavesam.io"
                       title="Portfolio Website"
                       description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
                     />
