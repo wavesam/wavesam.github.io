@@ -17,7 +17,7 @@ const Portal = ({ children }) => {
   return createPortal(children, document.body);
 };
 
-const Modal = ({ isOpen, onClose, site, title, description }) => {
+const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
   return (
     <Portal>
       <AnimatePresence>
@@ -47,6 +47,20 @@ const Modal = ({ isOpen, onClose, site, title, description }) => {
                 <div className="h-full justify-center lg:w-1/4 flex flex-col gap-7 lg:gap-10 items-start">
                   <div className="text-5xl font-black">{title}</div>
                   <div className="text-xl">{description}</div>
+
+                  {/* Tags in modal */}
+                  <div className="flex flex-wrap gap-2">
+                    {tags &&
+                      tags.map((tag, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-blue-700 text-white text-sm font-semibold"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                  </div>
+
                   <div className="lg:hidden text-[14px] text-blue-700">
                     Preview is only supported on desktop.
                     <br />↓ Visit the site instead
@@ -95,7 +109,7 @@ const Modal = ({ isOpen, onClose, site, title, description }) => {
   );
 };
 
-const WebsiteFrame = ({ site, title, description }) => {
+const WebsiteFrame = ({ site, title, description, tags }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -108,7 +122,7 @@ const WebsiteFrame = ({ site, title, description }) => {
         onClick={openModal}
       >
         <div className="w-full h-[300px] flex items-center justify-center overflow-hidden border-4 border-black">
-          <div className="absolute inset-0 bg-black/80 flex flex-col lg:flex-row gap-5 items-center justify-center">
+          <div className="absolute inset-0 bg-black/80 flex flex-col lg:flex-row gap-3 sm:gap-5 p-5 items-center justify-center sm:items-start sm:justify-start">
             <motion.div
               className="w-16 h-16 bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-color border-4 border-black"
               whileHover={{ scale: 1.1 }}
@@ -123,9 +137,24 @@ const WebsiteFrame = ({ site, title, description }) => {
                 <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
               </svg>
             </motion.div>
-            <div className="text-white">
-              <div className="text-2xl font-black">{title}</div>
-              <div className="text-center lg:text-left">Click to Play!</div>
+            <div className="lg:w-4/5 text-white flex flex-col gap-2">
+              <div className="text-2xl font-black text-center sm:text-left">
+                {title}
+              </div>
+
+              {/* Tags in the thumbnail */}
+              <div className="flex flex-wrap gap-2 items-center justify-center sm:justify-start">
+                {tags &&
+                  tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-2 py-[1px] bg-blue-700 text-white text-sm font-semibold"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+              </div>
+              <div className="hidden sm:inline text-xl">{description}</div>
             </div>
           </div>
           <iframe
@@ -144,6 +173,7 @@ const WebsiteFrame = ({ site, title, description }) => {
         site={site}
         title={title}
         description={description}
+        tags={tags}
       />
     </>
   );

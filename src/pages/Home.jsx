@@ -56,27 +56,26 @@ const Home = () => {
             <Window
               title="Projects"
               content={
-                <div className="w-full h-full p-5 flex flex-col gap-5">
-                  <div className="justify-between flex flex-col lg:flex-row gap-5">
-                    <WebsiteFrame
-                      site="wavesam.io/kahatacademy"
-                      title="Rickroll Generator"
-                      description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
-                    />
-                    <WebsiteFrame
-                      site="kwantum-institute.github.io"
-                      title="Kwantum Institute"
-                      description="I was the lead web developer at Kwantum Institute, responsible for
-      the majority of the front-end development."
-                    />
-                  </div>
-                  <div className="justify-between flex flex-col lg:flex-row gap-5">
-                    <WebsiteFrame
-                      site="wavesam.io"
-                      title="Portfolio Website"
-                      description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
-                    />
-                  </div>
+                <div className="w-full h-full p-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                  <WebsiteFrame
+                    site="wavesam.io/kahatacademy"
+                    title="Rickroll Generator"
+                    description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
+                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                  />
+                  <WebsiteFrame
+                    site="kwantum-institute.github.io"
+                    title="Kwantum Institute"
+                    description="I was the lead web developer at Kwantum Institute, responsible for the majority of the front-end development."
+                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                  />
+                  <WebsiteFrame
+                    site="wavesam.io"
+                    title="Portfolio Website"
+                    description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
+                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                  />
+                  <div className="hidden lg:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
                 </div>
               }
             ></Window>
