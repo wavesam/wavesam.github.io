@@ -23,7 +23,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-blue-300"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-sky-200"
             onClick={onClose}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -51,7 +51,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
                       tags.map((tag, index) => (
                         <span
                           key={index}
-                          className="px-3 py-1 bg-blue-700 text-white text-sm font-semibold"
+                          className="px-3 py-1 bg-sky-700 text-white text-sm font-semibold"
                         >
                           {tag}
                         </span>
@@ -59,7 +59,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
                   </div>
                   <div className="text-xl">{description}</div>
 
-                  <div className="lg:hidden text-[14px] text-blue-700">
+                  <div className="lg:hidden text-[14px] text-sky-700">
                     Preview is only supported on desktop.
                     <br />↓ Visit the site instead
                   </div>
@@ -73,7 +73,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
                     Visit Site
                   </motion.button>
                   <motion.button
-                    className="text-xl hover:text-blue-700 transition-colors"
+                    className="text-xl hover:text-sky-700 transition-colors"
                     onClick={onClose}
                     aria-label="Close modal"
                     whileHover={{ scale: 1.1 }}
@@ -122,7 +122,7 @@ const WebsiteFrame = ({ site, title, description, tags }) => {
         <div className="w-full h-[300px] flex items-center justify-center overflow-hidden border-4 border-black">
           <div className="absolute inset-0 bg-black/80 flex flex-col lg:flex-row gap-3 sm:gap-5 p-5 items-center justify-center sm:items-start sm:justify-start">
             <motion.div
-              className="w-16 h-16 bg-blue-700 flex items-center justify-center hover:bg-blue-800 transition-color border-4 border-black"
+              className="w-16 h-16 bg-sky-700 flex items-center justify-center hover:bg-sky-800 transition-color border-4 border-black"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -146,7 +146,7 @@ const WebsiteFrame = ({ site, title, description, tags }) => {
                   tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="px-2 py-[1px] bg-blue-700 text-white text-sm font-semibold"
+                      className="px-2 py-[1px] bg-sky-700 text-white text-sm font-semibold"
                     >
                       {tag}
                     </span>

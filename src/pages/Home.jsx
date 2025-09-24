@@ -19,11 +19,12 @@ const Home = () => {
                       alt="GitHub profile"
                       className="w-[117px] h-[117px] border-4 border-black"
                     />
-                    <p className="text-2xl lg:text-3xl">
-                      Hi, I'm <strong>Lee Yan Ho Samuel</strong>! I am an
-                      aspiring full stack developer building with{" "}
-                      <strong className="text-blue-700">React Native</strong>{" "}
-                      and <strong className="text-blue-700">Node.js</strong>.
+                    <p className="w-full text-2xl lg:text-3xl">
+                      Hi, I'm <strong>Samuel Lee!</strong>
+                      <br></br>I specialize in building modern web applications
+                      with <strong className="text-sky-700">React</strong>,{" "}
+                      <strong className="text-sky-700">Vite</strong>, and{" "}
+                      <strong className="text-sky-700">Tailwind CSS</strong>.
                     </p>
                   </div>
                 }

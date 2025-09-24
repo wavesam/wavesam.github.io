@@ -11,7 +11,7 @@ const Footer = () => {
           href="mailto:samuel.yh.lee@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline text-blue-300"
+          className="inline text-sky-400"
         >
           samuel.yh.lee@gmail.com
         </a>

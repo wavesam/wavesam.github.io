@@ -4,9 +4,9 @@ const Window = ({ title, content }) => {
       {/* Traffic light buttons */}
       <div className="relative flex items-center p-4 border-b-4 border-black bg-gray-300">
         <div className="flex space-x-2">
-          <div className="w-3 h-3 bg-blue-900"></div>
-          <div className="w-3 h-3 bg-blue-700"></div>
-          <div className="w-3 h-3 bg-blue-500"></div>
+          <div className="w-3 h-3 bg-sky-900"></div>
+          <div className="w-3 h-3 bg-sky-700"></div>
+          <div className="w-3 h-3 bg-sky-500"></div>
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-2xl font-bold">{title}</div>
