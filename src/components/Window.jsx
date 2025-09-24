@@ -12,7 +12,7 @@ const Window = ({ title, content }) => {
           <div className="text-2xl font-bold">{title}</div>
         </div>
       </div>
-      <div className="h-[calc(100%-theme(space.8)-16px)] p-5 bg-white">
+      <div className="h-[calc(100%-theme(space.8)-16px)] bg-white">
         {content}
       </div>
     </div>
