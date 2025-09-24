@@ -23,7 +23,7 @@ const Modal = ({ isOpen, onClose, site, title, description, tags }) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-sky-200"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-white"
             onClick={onClose}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

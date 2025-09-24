@@ -62,19 +62,37 @@ const Home = () => {
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"
                     description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
-                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                    tags={[
+                      "HTML",
+                      "CSS",
+                      "JavaScript",
+                      "React",
+                      "Tailwind CSS",
+                    ]}
                   />
                   <WebsiteFrame
                     site="kwantum-institute.github.io"
                     title="Kwantum Institute"
                     description="I was the lead web developer at Kwantum Institute, responsible for the majority of the front-end development."
-                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                    tags={[
+                      "HTML",
+                      "CSS",
+                      "JavaScript",
+                      "React",
+                      "Tailwind CSS",
+                    ]}
                   />
                   <WebsiteFrame
                     site="wavesam.io"
                     title="Portfolio Website"
                     description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
-                    tags={["html", "css", "javascript", "react", "tailwind"]}
+                    tags={[
+                      "HTML",
+                      "CSS",
+                      "JavaScript",
+                      "React",
+                      "Tailwind CSS",
+                    ]}
                   />
                   <div className="hidden lg:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
                 </div>
