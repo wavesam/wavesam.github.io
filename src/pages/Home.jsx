@@ -13,7 +13,7 @@ const Home = () => {
               <Window
                 title="Introduction"
                 content={
-                  <div className="p-5 flex flex-col lg:flex-row gap-5 lg:justify-between">
+                  <div className="flex flex-col lg:flex-row gap-5 lg:justify-between">
                     <img
                       src="https://github.com/wavesam.png"
                       alt="GitHub profile"
@@ -35,7 +35,7 @@ const Home = () => {
               <Window
                 title="Experience"
                 content={
-                  <div className="w-full h-full p-5 text-xl lg:text-xl flex flex-col gap-3">
+                  <div className="w-full h-full text-xl lg:text-xl flex flex-col gap-3">
                     <div>
                       Currently studying AI Engineering at{" "}
                       <strong>
@@ -57,7 +57,7 @@ const Home = () => {
             <Window
               title="Projects"
               content={
-                <div className="w-full h-full p-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-5">
                   <WebsiteFrame
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"
@@ -73,7 +73,7 @@ const Home = () => {
                   <WebsiteFrame
                     site="wavesam.io"
                     title="Portfolio Website"
-                    description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
+                    description="This is the website you are currently on! Deployed via Github Pages."
                     tags={["React", "Vite", "Tailwind CSS"]}
                   />
                   <div className="hidden lg:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
