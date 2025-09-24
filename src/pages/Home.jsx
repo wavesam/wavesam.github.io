@@ -61,38 +61,20 @@ const Home = () => {
                   <WebsiteFrame
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"
-                    description="Users can generate custom rickroll links! Built using vanilla JS and Tailwind CSS."
-                    tags={[
-                      "HTML",
-                      "CSS",
-                      "JavaScript",
-                      "React",
-                      "Tailwind CSS",
-                    ]}
+                    description="Users can generate custom rickroll links! Featuring a custom URL parameters and a mobile-responsive design."
+                    tags={["React", "Vite", "Tailwind CSS"]}
                   />
                   <WebsiteFrame
                     site="kwantum-institute.github.io"
                     title="Kwantum Institute"
-                    description="I was the lead web developer at Kwantum Institute, responsible for the majority of the front-end development."
-                    tags={[
-                      "HTML",
-                      "CSS",
-                      "JavaScript",
-                      "React",
-                      "Tailwind CSS",
-                    ]}
+                    description="Lead frontend developer at Kwantum Institute and responsible for all of the front-end development. Collaborated with the backend team to integrate the website with a Django APIs."
+                    tags={["React", "Django", "Vite", "Tailwind CSS"]}
                   />
                   <WebsiteFrame
                     site="wavesam.io"
                     title="Portfolio Website"
                     description="This is the website you are currently on! I built this portfolio website using React and Tailwind CSS."
-                    tags={[
-                      "HTML",
-                      "CSS",
-                      "JavaScript",
-                      "React",
-                      "Tailwind CSS",
-                    ]}
+                    tags={["React", "Vite", "Tailwind CSS"]}
                   />
                   <div className="hidden lg:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
                 </div>
