@@ -57,7 +57,7 @@ const Home = () => {
             <Window
               title="Projects"
               content={
-                <div className="w-full h-full p-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div className="w-full h-full p-5 grid grid-cols-1 xl:grid-cols-2 gap-5">
                   <WebsiteFrame
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"

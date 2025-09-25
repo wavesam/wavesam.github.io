@@ -120,7 +120,7 @@ const WebsiteFrame = ({ site, title, description, tags }) => {
         onClick={openModal}
       >
         <div className="w-full h-[300px] flex items-center justify-center overflow-hidden border-4 border-black">
-          <div className="absolute inset-0 bg-black/80 flex flex-col lg:flex-row gap-3 sm:gap-5 p-5 items-center justify-center sm:items-start sm:justify-start">
+          <div className="absolute inset-0 bg-black/80 flex flex-col sm:flex-row gap-3 sm:gap-5 p-5 items-center justify-center sm:items-start sm:justify-start">
             <motion.div
               className="w-16 h-16 bg-sky-700 flex items-center justify-center hover:bg-sky-800 transition-color border-4 border-black"
               whileHover={{ scale: 1.1 }}
@@ -135,7 +135,7 @@ const WebsiteFrame = ({ site, title, description, tags }) => {
                 <path d="M8 5V19L19 12L8 5Z" fill="currentColor" />
               </svg>
             </motion.div>
-            <div className="lg:w-4/5 text-white flex flex-col gap-2">
+            <div className="w-4/5 text-white flex flex-col gap-2">
               <div className="text-2xl font-black text-center sm:text-left">
                 {title}
               </div>
