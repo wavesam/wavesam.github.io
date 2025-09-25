@@ -67,7 +67,7 @@ const Home = () => {
                   <WebsiteFrame
                     site="kwantum-institute.github.io"
                     title="Kwantum Institute"
-                    description="Lead frontend developer at Kwantum Institute and responsible for all of the front-end development. Collaborated with the backend team to integrate the website with a Django APIs."
+                    description="Lead frontend developer at Kwantum Institute and responsible for all of the front-end development. Collaborated with the backend team to integrate the website with Django APIs."
                     tags={["React", "Django", "Vite", "Tailwind CSS"]}
                   />
                   <WebsiteFrame
