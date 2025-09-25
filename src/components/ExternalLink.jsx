@@ -11,7 +11,7 @@ const ExternalLink = ({ href, children, size = "md" }) => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="items-center group duration-300 hover:text-blue-700"
+      className="items-center group duration-300 hover:text-sky-700"
     >
       {children}
       <svg
