@@ -76,7 +76,7 @@ const Home = () => {
                     description="This is the website you are currently on! Deployed via Github Pages."
                     tags={["React", "Vite", "Tailwind CSS"]}
                   />
-                  <div className="hidden lg:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
+                  <div className="hidden xl:inline w-full h-full bg-black/80 border-4 border-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px]"></div>
                 </div>
               }
             ></Window>
