@@ -61,7 +61,7 @@ const Home = () => {
                   <WebsiteFrame
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"
-                    description="Users can generate custom rickroll links! Featuring a custom URL parameters and a mobile-responsive design."
+                    description="Users can generate custom rickroll links! Featuring custom URL parameters and a mobile-responsive design."
                     tags={["React", "Vite", "Tailwind CSS"]}
                   />
                   <WebsiteFrame
