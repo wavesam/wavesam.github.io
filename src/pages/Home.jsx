@@ -20,11 +20,13 @@ const Home = () => {
                       className="w-[117px] h-[117px] border-4 border-black"
                     />
                     <p className="w-full text-2xl lg:text-3xl">
-                      Hi, I'm <strong>Samuel Lee!</strong>
-                      <br></br>I specialize in building modern web applications
-                      with <strong className="text-sky-700">React</strong>,{" "}
-                      <strong className="text-sky-700">Vite</strong>, and{" "}
-                      <strong className="text-sky-700">Tailwind CSS</strong>.
+                      Hey! I'm{" "}
+                      <strong className="text-sky-700">Samuel Lee</strong>, and
+                      I make websites. I'm a{" "}
+                      <strong className="text-sky-700">
+                        full stack developer
+                      </strong>{" "}
+                      specializing in React and Node.js.
                     </p>
                   </div>
                 }

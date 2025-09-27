@@ -8,12 +8,12 @@ const Footer = () => {
       <div className="font-semibold">
         Interested in working together? Email me at{" "}
         <a
-          href="mailto:samuel.yh.lee@gmail.com"
+          href="mailto:sam@wavesam.io"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline text-sky-400"
+          className="inline text-sky-300"
         >
-          samuel.yh.lee@gmail.com
+          sam@wavesam.io
         </a>
         !
       </div>
