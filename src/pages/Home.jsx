@@ -20,9 +20,9 @@ const Home = () => {
                       className="w-[117px] h-[117px] border-4 border-black"
                     />
                     <p className="w-full text-2xl lg:text-3xl">
-                      Hey! I'm{" "}
+                      Hey, I'm{" "}
                       <strong className="text-sky-700">Samuel Lee</strong>, and
-                      I make websites. I'm a{" "}
+                      I make <strong>websites.</strong> I'm a{" "}
                       <strong className="text-sky-700">
                         full stack developer
                       </strong>{" "}
