@@ -26,3 +26,7 @@ div h1 {
   position: fixed;
   width: 100%;
 }
+
+.my-element::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}

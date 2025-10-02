@@ -119,7 +119,7 @@ const WebsiteFrame = ({ site, title, description, tags }) => {
         className="relative w-full flex flex-col website-frame cursor-pointer"
         onClick={openModal}
       >
-        <div className="w-full h-[300px] flex items-center justify-center overflow-hidden border-4 border-black">
+        <div className="w-full sm:h-[300px] h-[300px] md:h-[255px] xl:h-[300px] flex items-center justify-center overflow-hidden border-4 border-black">
           <div className="absolute inset-0 bg-black/80 flex flex-col sm:flex-row gap-3 sm:gap-5 p-5 items-center justify-center sm:items-start sm:justify-start">
             <motion.div
               className="w-16 h-16 bg-sky-700 flex items-center justify-center hover:bg-sky-800 transition-color border-4 border-black"

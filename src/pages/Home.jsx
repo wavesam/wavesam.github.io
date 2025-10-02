@@ -1,15 +1,15 @@
 import Section from "./Section";
 import WebsiteFrame from "../components/WebsiteFrame";
 import Window from "../components/Window";
-import ExternalLink from "../components/ExternalLink.jsx";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Home = () => {
   return (
     <Section
       content={
-        <div className="my-10 w-full flex flex-col">
-          <div className="flex flex-col lg:flex-row gap-5">
-            <div className="lg:w-full animate-fadeInLeft">
+        <div className="my-[20px] sm:my-10 w-full flex flex-col">
+          <div className="flex flex-col xl:flex-row gap-[20px] sm:gap-5">
+            <div className="w-full md:w-2/3 xl:w-1/2 animate-fadeInLeft">
               <Window
                 title="Introduction"
                 content={
@@ -17,37 +17,46 @@ const Home = () => {
                     <img
                       src="https://github.com/wavesam.png"
                       alt="GitHub profile"
-                      className="w-[117px] h-[117px] border-4 border-black"
+                      className="w-[145px] h-[145px] border-4 border-black"
                     />
-                    <p className="w-full text-2xl lg:text-3xl">
-                      Hey, I'm{" "}
-                      <strong className="text-sky-700">Samuel Lee</strong>, and
-                      I make <strong>websites.</strong> I'm a{" "}
-                      <strong className="text-sky-700">
-                        full stack developer
-                      </strong>{" "}
-                      specializing in React and Node.js.
-                    </p>
+                    <div className="flex flex-col gap-3 w-full">
+                      <p className="w-full text-3xl">
+                        Hey, I'm <strong>Samuel Lee</strong>,{" "}
+                        <br className="hidden sm:inline"></br>a{" "}
+                        <strong className="text-sky-700">
+                          full stack developer.
+                        </strong>
+                      </p>
+                      <motion.div
+                        className="w-full sm:w-[300px] lg:w-full py-2 bg-sky-700 border-4 border-black text-white font-bold text-center text-xl sm:text-2xl hover:bg-sky-800 cursor-pointer"
+                        onClick={() =>
+                          window.open("mailto:samuel@wavesam.io", "_blank")
+                        }
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        Let's get in touch!
+                      </motion.div>
+                    </div>
                   </div>
                 }
               ></Window>
             </div>
 
-            <div className="animate-fadeInRight">
+            <div className="w-full xl:w-1/2 animate-fadeInRight">
               <Window
                 title="Experience"
                 content={
-                  <div className="w-full h-full p-5 text-xl lg:text-xl flex flex-col gap-3">
-                    <div>
-                      Currently studying AI Engineering at{" "}
-                      <strong>
-                        <ExternalLink
-                          size="md"
-                          href="https://www.polyu.edu.hk/eee/study/undergraduate-programmes/beng-and-bsc-scheme-in-information-and-artificial-intelligence-engineering/?sc_lang=en"
-                        >
-                          PolyU
-                        </ExternalLink>
-                      </strong>
+                  <div className="h-[180px]">
+                    <div className="p-5 flex flex-col gap-3">
+                      {/*
+                    <div className="w-full h-full text-xl lg:text-xl flex justify-between">
+                      <p className="text-2xl">
+                        <strong>Class Representative</strong> at PolyU
+                      </p>
+                      <p className="text-gray-500 text-xl">2025 - Present</p>
+                    </div>
+                    */}
                     </div>
                   </div>
                 }
@@ -55,11 +64,11 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="mt-5 animate-fadeInUp">
+          <div className="mt-[20px] sm:mt-5 animate-fadeInUp">
             <Window
               title="Projects"
               content={
-                <div className="w-full h-full p-5 grid grid-cols-1 xl:grid-cols-2 gap-5">
+                <div className="w-full h-full p-5 grid grid-cols-1 xl:grid-cols-2 gap-5 bg-white">
                   <WebsiteFrame
                     site="wavesam.io/kahatacademy"
                     title="Rickroll Generator"

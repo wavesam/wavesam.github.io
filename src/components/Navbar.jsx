@@ -3,7 +3,7 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 const Navbar = () => {
   return (
-    <div className="px-[10%] py-3 justify-between flex text-2xl bg-black text-white">
+    <div className="px-[20px] sm:px-[10%] py-3 justify-between flex text-2xl bg-black text-white">
       <Link to="/">
         <strong>🌊 Samuel Lee</strong>
       </Link>

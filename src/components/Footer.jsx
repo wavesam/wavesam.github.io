@@ -13,7 +13,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="inline text-sky-300"
         >
-          sam@wavesam.io
+          samuel@wavesam.io
         </a>
         !
       </div>
