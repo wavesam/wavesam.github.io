@@ -17,9 +17,9 @@ const Home = () => {
                     <img
                       src="https://github.com/wavesam.png"
                       alt="GitHub profile"
-                      className="w-[145px] h-[145px] border-4 border-black"
+                      className="w-[140px] h-[140px] border-4 border-black"
                     />
-                    <div className="flex flex-col gap-3 w-full">
+                    <div className="w-full flex flex-col gap-3 lg:justify-between">
                       <p className="w-full text-3xl">
                         Hey, I'm <strong>Samuel Lee</strong>,{" "}
                         <br className="hidden sm:inline"></br>a{" "}
