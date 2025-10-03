@@ -8,10 +8,10 @@ const Contact = () => {
     <Section
       content={
         <div className="my-[20px] sm:my-10 w-full flex flex-col">
-          <div className="flex flex-col xl:flex-row gap-[20px] sm:gap-5">
+          <div className="flex flex-col gap-[20px] sm:gap-5">
             <Link className="w-full sm:w-[300px] lg:w-full " to="../">
               <motion.button
-                className="w-full sm:w-[300px] lg:w-full py-2 bg-sky-700 border-4 border-black text-white font-bold text-center text-xl sm:text-2xl hover:bg-sky-800 cursor-pointer"
+                className="w-full sm:w-[300px] py-2 bg-sky-700 border-4 border-black text-white font-bold text-center text-xl sm:text-2xl hover:bg-sky-800 cursor-pointer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ opacity: 0, x: -50 }}
@@ -23,7 +23,7 @@ const Contact = () => {
             </Link>
 
             <motion.div
-              className="w-full xl:w-1/2"
+              className="w-full"
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
