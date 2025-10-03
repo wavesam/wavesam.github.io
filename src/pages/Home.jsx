@@ -1,7 +1,8 @@
 import Section from "./Section";
 import WebsiteFrame from "../components/WebsiteFrame";
 import Window from "../components/Window";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -9,7 +10,12 @@ const Home = () => {
       content={
         <div className="my-[20px] sm:my-10 w-full flex flex-col">
           <div className="flex flex-col xl:flex-row gap-[20px] sm:gap-5">
-            <div className="w-full md:w-2/3 xl:w-1/2 animate-fadeInLeft">
+            <motion.div
+              className="w-full md:w-2/3 xl:w-1/2"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <Window
                 title="Introduction"
                 content={
@@ -27,23 +33,30 @@ const Home = () => {
                           full stack developer.
                         </strong>
                       </p>
-                      <motion.div
-                        className="w-full sm:w-[300px] lg:w-full py-2 bg-sky-700 border-4 border-black text-white font-bold text-center text-xl sm:text-2xl hover:bg-sky-800 cursor-pointer"
-                        onClick={() =>
-                          window.open("mailto:samuel@wavesam.io", "_blank")
-                        }
-                        whileHover={{ scale: 1.02 }}
-                        whileTap={{ scale: 0.95 }}
+                      <Link
+                        className="w-full sm:w-[300px] lg:w-full"
+                        to="/contact"
                       >
-                        Let's get in touch!
-                      </motion.div>
+                        <motion.div
+                          className="w-full sm:w-[300px] lg:w-full py-2 bg-sky-700 border-4 border-black text-white font-bold text-center text-xl sm:text-2xl hover:bg-sky-800 cursor-pointer"
+                          whileHover={{ scale: 1.02 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          Let's work together!
+                        </motion.div>
+                      </Link>
                     </div>
                   </div>
                 }
               ></Window>
-            </div>
+            </motion.div>
 
-            <div className="w-full xl:w-1/2 animate-fadeInRight">
+            <motion.div
+              className="w-full xl:w-1/2"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <Window
                 title="Experience"
                 content={
@@ -61,10 +74,15 @@ const Home = () => {
                   </div>
                 }
               ></Window>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="mt-[20px] sm:mt-5 animate-fadeInUp">
+          <motion.div
+            className="mt-[20px] sm:mt-5"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <Window
               title="Projects"
               content={
@@ -91,7 +109,7 @@ const Home = () => {
                 </div>
               }
             ></Window>
-          </div>
+          </motion.div>
         </div>
       }
     />
